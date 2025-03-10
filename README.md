@@ -26,4 +26,4 @@ This repository includes two JSON and TXT reports, which are the outputs of runn
     zarchiver_analysis.json & zarchiver_analysis.txt
     simple_calculator_analysis.json & simple_calculator_analysis.txt
 
-These reports provide detailed insights into permissions, security risks, and exported components found in each analyzed A
+These reports provide detailed insights into permissions, security risks, and exported components found in each analyzed APK
