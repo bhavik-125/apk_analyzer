@@ -12,7 +12,7 @@ APK Analyzer is a Python-based tool for static analysis of Android APKs. It extr
 
     Clone the repository:
 
-git clone https://github.com/yourusername/apk-analyzer.git  
+git clone https://github.com/bhavik-125/apk-analyzer.git  
 cd apk-analyzer  
 
 Install dependencies:
