@@ -1,6 +1,7 @@
 APK Analyzer 🛡️
 
 APK Analyzer is a Python-based tool for static analysis of Android APKs. It extracts metadata, checks permissions, and identifies security risks.
+
 🚀 Features
 
     Extracts permissions, activities, services, and receivers.
