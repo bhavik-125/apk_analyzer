@@ -1,0 +1,5 @@
+androguard
+lxml
+semgrep
+bandit
+apktool
