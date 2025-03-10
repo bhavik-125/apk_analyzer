@@ -1,0 +1,60 @@
+{
+    "apk_info": {
+        "package_name": "jy.x.separation.pbwh.oxgr",
+        "permissions": [
+            "moe.shizuku.manager.permission.API_V23",
+            "android.permission.WRITE_MEDIA_STORAGE",
+            "ru.zdevs.zarchiver.permission.PLUGIN.CLOUD",
+            "android.permission.QUERY_ALL_PACKAGES",
+            "android.permission.READ_EXTERNAL_STORAGE",
+            "ru.zdevs.zarchiver.permission.PLUGIN.USB",
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            "android.permission.WAKE_LOCK",
+            "android.permission.FOREGROUND_SERVICE",
+            "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+            "android.permission.ACCESS_SUPERUSER"
+        ],
+        "activities": [
+            "ru.zdevs.zarchiver.ZArchiver",
+            "ru.zdevs.zarchiver.activity.SettingsDlg",
+            "ru.zdevs.zarchiver.activity.AboutDlg",
+            "ru.zdevs.zarchiver.activity.OpenAsDlg",
+            "ru.zdevs.zarchiver.activity.InstallApkDlg",
+            "ru.zdevs.zarchiver.ZSelectFile",
+            "ru.zdevs.zarchiver.activity.ExtractDlg",
+            "ru.zdevs.zarchiver.activity.InstallApksDlg",
+            "ru.zdevs.zarchiver.ZImageViewer",
+            "ru.zdevs.zarchiver.ZTextEditor"
+        ],
+        "services": [
+            "ru.zdevs.zarchiver.service.ZArchiverService",
+            "ru.zdevs.zarchiver.service.ZArchiverClearTemp"
+        ],
+        "receivers": [],
+        "exported_components": {
+            "exported_activities": [
+                "ru.zdevs.zarchiver.ZArchiver",
+                "ru.zdevs.zarchiver.ZSelectFile",
+                "ru.zdevs.zarchiver.activity.ExtractDlg",
+                "ru.zdevs.zarchiver.activity.InstallApksDlg",
+                "ru.zdevs.zarchiver.ZImageViewer",
+                "ru.zdevs.zarchiver.ZTextEditor"
+            ],
+            "exported_services": [],
+            "exported_receivers": []
+        }
+    },
+    "security_risks": [
+        "\u26a0\ufe0f android.permission.QUERY_ALL_PACKAGES: Can list all installed applications",
+        "\u26a0\ufe0f Exported exported_activitie: ru.zdevs.zarchiver.ZArchiver (Potential security risk)",
+        "\u26a0\ufe0f Exported exported_activitie: ru.zdevs.zarchiver.ZSelectFile (Potential security risk)",
+        "\u26a0\ufe0f Exported exported_activitie: ru.zdevs.zarchiver.activity.ExtractDlg (Potential security risk)",
+        "\u26a0\ufe0f Exported exported_activitie: ru.zdevs.zarchiver.activity.InstallApksDlg (Potential security risk)",
+        "\u26a0\ufe0f Exported exported_activitie: ru.zdevs.zarchiver.ZImageViewer (Potential security risk)",
+        "\u26a0\ufe0f Exported exported_activitie: ru.zdevs.zarchiver.ZTextEditor (Potential security risk)"
+    ],
+    "static_analysis_results": {
+        "semgrep": "                   \n                   \n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 6 Code Findings \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                                       \n    decompiled_apk/AndroidManifest.xml \n       java.android.security.exported_activity.exported_activity                                    \n          The application exports an activity. Any application on the device can launch the exported\n          activity which may compromise the integrity of your application or its data.  Ensure that \n          any exported activities do not have privileged access to your application's control plane.\n          Details: https://sg.run/eNGZ                                                              \n                                                                                                    \n           37\u2506 <activity android:configChanges=\"orientation|screenLayout|screenSize|smallestScreenSize\"                 \n  android:exported=\"true\" android:launchMode=\"singleTask\" android:name=\"r ... \u001b[0m                                       \n           38\u2506     <intent-filter>\n           39\u2506         <action android:name=\"android.intent.action.MAIN\"/>\n            [shortened a long line from output, adjust with --max-chars-per-line]\n            \u22ee\u2506----------------------------------------\n          604\u2506 <activity android:configChanges=\"orientation|screenLayout|screenSize|smallestScreenSize\"                 \n  android:excludeFromRecents=\"true\" android:exported=\"true\" android:launc ... \u001b[0m                                       \n          605\u2506     <intent-filter>\n          606\u2506         <action android:name=\"android.intent.action.GET_CONTENT\"/>\n            [shortened a long line from output, adjust with --max-chars-per-line]\n            \u22ee\u2506----------------------------------------\n          618\u2506 <activity android:configChanges=\"orientation|screenLayout|screenSize|smallestScreenSize\"                 \n  android:exported=\"true\" android:label=\"@string/MENU_EXTRACT_TO_DIR\" and ... \u001b[0m                                       \n          619\u2506     <intent-filter>\n          620\u2506         <action android:name=\"android.intent.action.VIEW\"/>\n            [shortened a long line from output, adjust with --max-chars-per-line]\n            \u22ee\u2506----------------------------------------\n          668\u2506 <activity android:configChanges=\"orientation|screenLayout|screenSize|smallestScreenSize\"                 \n  android:exported=\"true\" android:label=\"@string/MENU_INSTALL\" android:la ... \u001b[0m                                       \n          669\u2506     <intent-filter>\n          670\u2506         <action android:name=\"android.intent.action.VIEW\"/>\n            [shortened a long line from output, adjust with --max-chars-per-line]\n            \u22ee\u2506----------------------------------------\n          699\u2506 <activity android:configChanges=\"orientation|screenLayout|screenSize|smallestScreenSize\"                 \n  android:exported=\"true\" android:icon=\"@mipmap/ic_launcher_image\" androi ... \u001b[0m                                       \n          700\u2506     <intent-filter>\n          701\u2506         <action android:name=\"android.intent.action.VIEW\"/>\n            [shortened a long line from output, adjust with --max-chars-per-line]\n            \u22ee\u2506----------------------------------------\n          710\u2506 <activity android:configChanges=\"orientation|screenLayout|screenSize|smallestScreenSize\"                 \n  android:exported=\"true\" android:icon=\"@mipmap/ic_launcher_text\" android ... \u001b[0m                                       \n          711\u2506     <intent-filter>\n          712\u2506         <action android:name=\"android.intent.action.VIEW\"/>\n            [shortened a long line from output, adjust with --max-chars-per-line]\n\n",
+        "bandit": "Error running Bandit: [Errno 2] No such file or directory: 'bandit'"
+    }
+}

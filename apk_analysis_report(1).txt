@@ -1,0 +1,135 @@
+APK Analysis Report
+
+Package Name: com.calculatorx.simple.calculator.scientific
+
+Permissions:
+android.permission.POST_NOTIFICATIONS
+android.permission.ACCESS_ADSERVICES_TOPICS
+com.huawei.android.launcher.permission.WRITE_SETTINGS
+me.everything.badger.permission.BADGE_COUNT_WRITE
+android.permission.CAMERA
+com.sec.android.provider.badge.permission.WRITE
+com.oppo.launcher.permission.READ_SETTINGS
+android.permission.ACCESS_ADSERVICES_AD_ID
+com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+com.calculatorx.simple.calculator.scientific.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+com.huawei.android.launcher.permission.READ_SETTINGS
+com.anddoes.launcher.permission.UPDATE_COUNT
+android.permission.WAKE_LOCK
+android.permission.INTERNET
+com.htc.launcher.permission.READ_SETTINGS
+com.sec.android.provider.badge.permission.READ
+me.everything.badger.permission.BADGE_COUNT_READ
+android.permission.ACCESS_NETWORK_STATE
+android.permission.VIBRATE
+com.android.vending.BILLING
+com.google.android.gms.permission.AD_ID
+com.htc.launcher.permission.UPDATE_SHORTCUT
+com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+android.permission.FOREGROUND_SERVICE
+com.majeur.launcher.permission.UPDATE_BADGE
+android.permission.RECEIVE_BOOT_COMPLETED
+com.sonyericsson.home.permission.BROADCAST_BADGE
+android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+com.huawei.android.launcher.permission.CHANGE_BADGE
+com.oppo.launcher.permission.WRITE_SETTINGS
+android.permission.READ_APP_BADGE
+com.google.android.c2dm.permission.RECEIVE
+com.calculatorx.simple.calculator.scientific.permission.C2D_MESSAGE
+
+Activities:
+com.calculatorx.simple.calculator.scientific.ui.activities.EntranceActivity
+com.calculatorx.simple.calculator.scientific.ui.activities.MainActivity
+com.google.android.gms.ads.AdActivity
+com.canhub.cropper.CropImageActivity
+com.onesignal.NotificationOpenedActivityHMS
+com.onesignal.PermissionsActivity
+com.onesignal.NotificationOpenedReceiver
+com.onesignal.NotificationOpenedReceiverAndroid22AndOlder
+com.google.android.gms.common.api.GoogleApiActivity
+com.google.android.gms.ads.OutOfContextTestingActivity
+com.google.android.gms.ads.NotificationHandlerActivity
+com.android.billingclient.api.ProxyBillingActivity
+com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+
+Services:
+com.onesignal.HmsMessageServiceOneSignal
+com.onesignal.FCMIntentService
+com.onesignal.FCMIntentJobService
+com.onesignal.SyncService
+com.onesignal.SyncJobService
+androidx.camera.core.impl.MetadataHolderService
+com.google.firebase.components.ComponentDiscoveryService
+com.google.firebase.messaging.FirebaseMessagingService
+com.google.android.gms.measurement.AppMeasurementService
+com.google.android.gms.measurement.AppMeasurementJobService
+com.google.android.gms.ads.AdService
+androidx.work.impl.background.systemalarm.SystemAlarmService
+androidx.work.impl.background.systemjob.SystemJobService
+androidx.work.impl.foreground.SystemForegroundService
+androidx.room.MultiInstanceInvalidationService
+com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+
+Receivers:
+com.onesignal.FCMBroadcastReceiver
+com.onesignal.NotificationDismissReceiver
+com.onesignal.BootUpReceiver
+com.onesignal.UpgradeReceiver
+com.google.firebase.iid.FirebaseInstanceIdReceiver
+com.google.android.gms.measurement.AppMeasurementReceiver
+androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+androidx.work.impl.background.systemalarm.RescheduleReceiver
+androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+androidx.work.impl.diagnostics.DiagnosticsReceiver
+androidx.profileinstaller.ProfileInstallReceiver
+com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+
+Exported Components:
+{
+    "exported_activities": [
+        "com.calculatorx.simple.calculator.scientific.ui.activities.EntranceActivity",
+        "com.canhub.cropper.CropImageActivity",
+        "com.onesignal.NotificationOpenedActivityHMS",
+        "com.onesignal.NotificationOpenedReceiver",
+        "com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+    ],
+    "exported_services": [
+        "androidx.work.impl.background.systemjob.SystemJobService"
+    ],
+    "exported_receivers": [
+        "com.onesignal.FCMBroadcastReceiver",
+        "com.onesignal.NotificationDismissReceiver",
+        "com.onesignal.BootUpReceiver",
+        "com.onesignal.UpgradeReceiver",
+        "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+        "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+        "androidx.profileinstaller.ProfileInstallReceiver"
+    ]
+}
+
+Security Risks:
+⚠️ android.permission.CAMERA: Can access the camera
+⚠️ Exported exported_activitie: com.calculatorx.simple.calculator.scientific.ui.activities.EntranceActivity (Potential security risk)
+⚠️ Exported exported_activitie: com.canhub.cropper.CropImageActivity (Potential security risk)
+⚠️ Exported exported_activitie: com.onesignal.NotificationOpenedActivityHMS (Potential security risk)
+⚠️ Exported exported_activitie: com.onesignal.NotificationOpenedReceiver (Potential security risk)
+⚠️ Exported exported_activitie: com.onesignal.NotificationOpenedReceiverAndroid22AndOlder (Potential security risk)
+⚠️ Exported exported_service: androidx.work.impl.background.systemjob.SystemJobService (Potential security risk)
+⚠️ Exported exported_receiver: com.onesignal.FCMBroadcastReceiver (Potential security risk)
+⚠️ Exported exported_receiver: com.onesignal.NotificationDismissReceiver (Potential security risk)
+⚠️ Exported exported_receiver: com.onesignal.BootUpReceiver (Potential security risk)
+⚠️ Exported exported_receiver: com.onesignal.UpgradeReceiver (Potential security risk)
+⚠️ Exported exported_receiver: com.google.firebase.iid.FirebaseInstanceIdReceiver (Potential security risk)
+⚠️ Exported exported_receiver: androidx.work.impl.diagnostics.DiagnosticsReceiver (Potential security risk)
+⚠️ Exported exported_receiver: androidx.profileinstaller.ProfileInstallReceiver (Potential security risk)
+
+Static Analysis Results:
+{
+    "semgrep": "                   \n                   \n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 3 Code Findings \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                                       \n    decompiled_apk/AndroidManifest.xml \n       java.android.security.exported_activity.exported_activity                                    \n          The application exports an activity. Any application on the device can launch the exported\n          activity which may compromise the integrity of your application or its data.  Ensure that \n          any exported activities do not have privileged access to your application's control plane.\n          Details: https://sg.run/eNGZ                                                              \n                                                                                                    \n           60\u2506 <activity android:exported=\"true\"                                                                        \n  android:name=\"com.calculatorx.simple.calculator.scientific.ui.activities.EntranceActivity\"                            \n  android:screenOrientation=\"portrait ... \u001b[0m                                                                           \n           61\u2506     <intent-filter>\n           62\u2506         <action android:name=\"android.intent.action.MAIN\"/>\n            [shortened a long line from output, adjust with --max-chars-per-line]\n            \u22ee\u2506----------------------------------------\n          110\u2506 <activity android:excludeFromRecents=\"true\" android:exported=\"true\"                                      \n  android:name=\"com.onesignal.NotificationOpenedReceiver\" android:noHistory=\"true\" android:tas ... \u001b[0m                  \n            [shortened a long line from output, adjust with --max-chars-per-line]\n                                                                         \n    decompiled_apk/unknown/org/mozilla/javascript/tools/debugger/test.js \n       javascript.browser.security.eval-detected.eval-detected                                       \n          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If\n          this content can be input from outside the program, this may be a code injection           \n          vulnerability. Ensure evaluated content is not definable by external sources.              \n          Details: https://sg.run/7ope                                                               \n                                                                                                     \n           53\u2506 eval(\"loop_body = \"+loop_body_text);\n\n",
+    "bandit": "Error running Bandit: [Errno 2] No such file or directory: 'bandit'"
+}
